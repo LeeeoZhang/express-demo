@@ -10,8 +10,9 @@
     <script src="./jquery.min.js"></script>
     <script>
         $.ajax({
-            method: 'get',
-            url : '/personal',
+            method: 'post',
+            url : '/post_data',
+            data: {name:'leo',age:18},
             dataType: 'json',
             success:function(res){
                 console.log(res)
